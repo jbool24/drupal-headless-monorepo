@@ -1,0 +1,18 @@
+
+type Page {
+  id: Int!
+  name: String!
+  author: String
+  description: String
+}
+
+type PageResponse implements Response {
+  errors: [Violation]
+  page: Page
+}
+
+input PageInput {
+  name: String!
+  description: String
+}
+

@@ -1,0 +1,7 @@
+extend type Query {
+  page(id: Int!): Page
+}
+
+extend type Mutation {
+  createPage(data: PageInput): PageResponse
+}
